@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00897B"
+    tools:context=".AgendaPrincipalActivity">
+
+    <Button
+        android:id="@+id/btAgebdaVersão1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#ED1414"
+        android:text="Agenda V1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btAgebdaVersão2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#1E88E5"
+        android:text="Agenda V2"
+        app:layout_constraintEnd_toEndOf="@+id/btAgebdaVersão1"
+        app:layout_constraintStart_toStartOf="@+id/btAgebdaVersão1"
+        app:layout_constraintTop_toBottomOf="@+id/btAgebdaVersão1" />
+
+    <Button
+        android:id="@+id/btAgebdaVersão3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#43A047"
+        android:text="Agenda V3"
+        app:layout_constraintEnd_toEndOf="@+id/btAgebdaVersão2"
+        app:layout_constraintStart_toStartOf="@+id/btAgebdaVersão2"
+        app:layout_constraintTop_toBottomOf="@+id/btAgebdaVersão2" />
+
+    <Button
+        android:id="@+id/btAgendaVers04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F4511E"
+        android:text="Agenda V4"
+        app:layout_constraintEnd_toEndOf="@+id/btAgebdaVersão3"
+        app:layout_constraintStart_toStartOf="@+id/btAgebdaVersão3"
+        app:layout_constraintTop_toBottomOf="@+id/btAgebdaVersão3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

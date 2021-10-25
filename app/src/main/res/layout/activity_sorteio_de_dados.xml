@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sorteioDeDados.SorteioDeDadosActivity">
+
+    <TextView
+        android:id="@+id/txtSaida1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDado1"
+        app:layout_constraintEnd_toStartOf="@+id/txtDado1"
+        app:layout_constraintTop_toTopOf="@+id/txtDado1" />
+
+    <TextView
+        android:id="@+id/txtSaida2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDado2"
+        app:layout_constraintEnd_toStartOf="@+id/txtDado2"
+        app:layout_constraintStart_toStartOf="@+id/txtSaida1"
+        app:layout_constraintTop_toTopOf="@+id/txtDado2" />
+
+    <TextView
+        android:id="@+id/txtSaida3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDado3"
+        app:layout_constraintEnd_toStartOf="@+id/txtDado3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtSaida2"
+        app:layout_constraintTop_toTopOf="@+id/txtDado3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtDado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="4 lados"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/txtDado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="6 lados"
+        app:layout_constraintEnd_toEndOf="@+id/txtDado1"
+        app:layout_constraintStart_toStartOf="@+id/txtDado1"
+        app:layout_constraintTop_toBottomOf="@+id/txtDado1" />
+
+    <TextView
+        android:id="@+id/txtDado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="8 lados"
+        app:layout_constraintEnd_toEndOf="@+id/txtDado2"
+        app:layout_constraintStart_toStartOf="@+id/txtDado2"
+        app:layout_constraintTop_toBottomOf="@+id/txtDado2" />
+
+    <Button
+        android:id="@+id/btTrocaDado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text=">"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDado1"
+        app:layout_constraintStart_toEndOf="@+id/txtDado1"
+        app:layout_constraintTop_toTopOf="@+id/txtDado1" />
+
+    <Button
+        android:id="@+id/btTrocaDado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text=">"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDado2"
+        app:layout_constraintEnd_toEndOf="@+id/btTrocaDado1"
+        app:layout_constraintStart_toEndOf="@+id/txtDado2"
+        app:layout_constraintTop_toTopOf="@+id/txtDado2"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/btTrocaDado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text=">"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDado3"
+        app:layout_constraintEnd_toEndOf="@+id/btTrocaDado2"
+        app:layout_constraintStart_toEndOf="@+id/txtDado3"
+        app:layout_constraintTop_toTopOf="@+id/txtDado3" />
+
+    <Button
+        android:id="@+id/btSortearDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Sortear Dados"
+        app:layout_constraintEnd_toEndOf="@+id/btTrocaDado3"
+        app:layout_constraintStart_toStartOf="@+id/txtSaida3"
+        app:layout_constraintTop_toBottomOf="@+id/txtDado3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Sorteio de Dados"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

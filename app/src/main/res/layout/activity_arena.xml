@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".arena.ArenaActivity">
+
+    <TextView
+        android:id="@+id/txtArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#FDD835"
+        android:backgroundTint="#FDFA35"
+        android:text="ARENA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btTurnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FDD835"
+        android:text="Proximo Turno"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtArena"
+        app:layout_constraintStart_toStartOf="@+id/txtArena"
+        app:layout_constraintTop_toBottomOf="@+id/txtArena" />
+
+    <TextView
+        android:id="@+id/txtGerreiro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Guerreiro 1:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/btTurnos"
+        app:layout_constraintTop_toBottomOf="@+id/btTurnos" />
+
+    <TextView
+        android:id="@+id/txtVidaGuerreiro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Vida: []"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtGerreiro1"
+        app:layout_constraintTop_toBottomOf="@+id/txtGerreiro1" />
+
+    <TextView
+        android:id="@+id/txtGuerreiro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Guerreiro 2:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtVidaGuerreiro1"
+        app:layout_constraintTop_toBottomOf="@+id/txtVidaGuerreiro1" />
+
+    <TextView
+        android:id="@+id/txtVidaGuerreiro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Vida: []"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtGuerreiro2"
+        app:layout_constraintTop_toBottomOf="@+id/txtGuerreiro2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
