@@ -13,11 +13,7 @@
         <activity
             android:name=".AgendaPrincipalActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MinhaAgendaV5.fragments.AjustesFragment"
@@ -45,7 +41,11 @@
         <activity
             android:name=".MinhaAgendaV4.TelaInicial4Activity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MinhaAgendaV3.ContatoAdapter"
@@ -53,19 +53,25 @@
             tools:ignore="Instantiatable" />
         <activity
             android:name=".MinhaAgendaV3.TelaInicial3Activity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".MinhaAgendaV2.EditarContato2Activity"
             android:exported="true" />
         <activity
             android:name=".MinhaAgendaV2.TelaInicial2Activity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".MinhaAgendaV1.EditarContatoActivity"
             android:exported="true" />
         <activity
             android:name=".MinhaAgendaV1.TelaInicialActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".agenda_alura.Agenda_AluraActivity"
             android:exported="true" />

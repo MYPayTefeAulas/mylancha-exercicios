@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center_vertical">
 
     <TextView
@@ -39,6 +39,5 @@
         android:text="Editar"
         app:layout_constraintBottom_toBottomOf="@+id/txtTelefone5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtTelefone5"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toTopOf="@+id/txtTelefone5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

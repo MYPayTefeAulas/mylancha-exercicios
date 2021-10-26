@@ -1,6 +1,6 @@
 package com.example.teste.MinhaAgendaV2
 
-data class Contato2(var nome: String, var telefone: String) {
+data class Contato2(var nome: String, var telefone: String, var email: String) {
     //val id = getProximoId()
 
     override fun toString(): String {

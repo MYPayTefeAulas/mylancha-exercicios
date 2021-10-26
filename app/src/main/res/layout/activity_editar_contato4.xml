@@ -11,28 +11,67 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Nome"
         android:inputType="textPersonName"
         android:nextFocusDown="@id/agenda4_txtNome"
+        android:text="Nome"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/agenda4_txtSobreNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@id/agenda4_txtNome"
+        android:text="SobreNome:"
+        app:layout_constraintEnd_toEndOf="@+id/agenda4_txtNome"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/agenda4_txtNome" />
 
     <EditText
         android:id="@+id/agenda4_txtTelefone"
-        android:layout_width="347dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="Telefone"
+        android:inputType="phone"
+        android:text="Telefone:"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtSobreNome"
+        app:layout_constraintTop_toBottomOf="@+id/agenda4_txtSobreNome" />
+
+    <EditText
+        android:id="@+id/agenda4_txtemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="E-mail"
+        app:layout_constraintEnd_toEndOf="@+id/agenda4_txtSobreNome"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtSobreNome"
+        app:layout_constraintTop_toBottomOf="@+id/agenda4_txtTelefone" />
+
+
+    <EditText
+        android:id="@+id/agenda4_txtEndereço"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/agenda4_txtNome"
-        app:layout_constraintStart_toStartOf="@+id/agenda4_txtNome"
-        app:layout_constraintTop_toBottomOf="@+id/agenda4_txtNome" />
+        android:nextFocusDown="@id/agenda4_txtNome"
+        android:text="Endereço:"
+        app:layout_constraintEnd_toEndOf="@+id/agenda4_txtTelefone"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtemail"
+        app:layout_constraintTop_toBottomOf="@+id/agenda4_txtemail" />
 
     <Button
         android:id="@+id/agenda4_btSalvar"
@@ -40,12 +79,54 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="#058F06"
-
-
         android:text="Salvar"
-        app:layout_constraintEnd_toEndOf="@+id/agenda4_txtTelefone"
-        app:layout_constraintStart_toStartOf="@+id/agenda4_txtTelefone"
-        app:layout_constraintTop_toBottomOf="@+id/agenda4_txtTelefone" />
+        app:layout_constraintEnd_toEndOf="@+id/agenda4_txtemail"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtEndereço"
+        app:layout_constraintTop_toBottomOf="@+id/agenda4_txtEndereço" />
 
+    <TextView
+        android:id="@+id/txt4Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda4_txtNome"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtNome" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SobreNome"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda4_txtSobreNome"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtSobreNome" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:text="Telefone"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda4_txtTelefone"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtTelefone" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda4_txtemail"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtemail" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda4_txtEndereço"
+        app:layout_constraintStart_toStartOf="@+id/agenda4_txtEndereço" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

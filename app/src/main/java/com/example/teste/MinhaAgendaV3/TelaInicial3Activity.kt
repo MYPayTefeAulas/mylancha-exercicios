@@ -29,22 +29,36 @@ class TelaInicial3Activity : AppCompatActivity() {
     private fun inicializaLista(){
         Agenda3.listaContatos3.addAll(
             listOf(
-                Contato3("1 luis", " 01"),
-                Contato3("2 felipe", "01"),
-                Contato3("3 inacio", "01"),
-                Contato3("4 conceição", "01"),
-                Contato3("5 luiz", "01"),
-                Contato3("6 flfhfj", "01"),
-                Contato3("7 luis", "01"),
-                Contato3("8 luis", "01"),
-                Contato3("9 luis", "01"),
-                Contato3("10 luis", "01"),
-                Contato3("11 luis", "01"),
-                Contato3("12 luis", "01"),
-                Contato3("13 luis", "01"),
-                Contato3("14 luis", "01")
-
-
+                Contato3("01 luis", "0800", "luis@maypay.com"),
+                Contato3("02 luis", "0800", "luis@maypay.com"),
+                Contato3("03 luis", "0800", "luis@maypay.com"),
+                Contato3("04 luis", "0800", "luis@maypay.com"),
+                Contato3("05 luis", "0800", "luis@maypay.com"),
+                Contato3("06 luis", "0800", "luis@maypay.com"),
+                Contato3("07 luis", "0800", "luis@maypay.com"),
+                Contato3("08 luis", "0800", "luis@maypay.com"),
+                Contato3("09 luis", "0800", "luis@maypay.com"),
+                Contato3("10 luis", "0800", "luis@maypay.com"),
+                Contato3("11 luis", "0800", "luis@maypay.com"),
+                Contato3("12 luis", "0800", "luis@maypay.com"),
+                Contato3("13 luis", "0800", "luis@maypay.com"),
+                Contato3("14 luis", "0800", "luis@maypay.com"),
+                Contato3("15 luis", "0800", "luis@maypay.com"),
+                Contato3("16 luis", "0800", "luis@maypay.com"),
+                Contato3("17 luis", "0800", "luis@maypay.com"),
+                Contato3("18 luis", "0800", "luis@maypay.com"),
+                Contato3("19 luis", "0800", "luis@maypay.com"),
+                Contato3("20 luis", "0800", "luis@maypay.com"),
+                Contato3("21 luis", "0800", "luis@maypay.com"),
+                Contato3("22 luis", "0800", "luis@maypay.com"),
+                Contato3("23 luis", "0800", "luis@maypay.com"),
+                Contato3("24 luis", "0800", "luis@maypay.com"),
+                Contato3("25 luis", "0800", "luis@maypay.com"),
+                Contato3("26 luis", "0800", "luis@maypay.com"),
+                Contato3("27 luis", "0800", "luis@maypay.com"),
+                Contato3("28 luis", "0800", "luis@maypay.com"),
+                Contato3("29 luis", "0800", "luis@maypay.com"),
+                Contato3("30 luis", "0800", "luis@maypay.com"),
 
             )
         )

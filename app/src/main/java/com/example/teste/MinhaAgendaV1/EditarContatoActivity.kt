@@ -17,14 +17,17 @@ class EditarContatoActivity : AppCompatActivity() {
          val indiceContato = intent.getIntExtra("indiceContato", -1)
         val nome: String = Agenda.listaContatoss[indiceContato].nome
         val telefone: String = Agenda.listaContatoss[indiceContato].telefone
+        val email: String = Agenda.listaContatoss[indiceContato].email
         binding.agendaTxtTelefone.setText(telefone)
         binding.agendaTxtNome.setText(nome)
+        binding.txtAgenda1Email.setText(email)
 
         binding.agendaBtSalvar.setOnClickListener {
             Agenda.listaContatoss[indiceContato].nome = binding.agendaTxtNome.text.toString()
             Agenda.listaContatoss[indiceContato].telefone = binding.agendaTxtTelefone.text.toString()
+            Agenda.listaContatoss[indiceContato].email = binding.txtAgenda1Email.text.toString()
 
-        Toast.makeText(this, "contato salvo com sucesso!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Dados alterados com sucesso!", Toast.LENGTH_SHORT).show()
             finish()
         }
 

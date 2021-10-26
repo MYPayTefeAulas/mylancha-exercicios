@@ -20,11 +20,11 @@ class TelaInicialActivity : AppCompatActivity() {
         binding = ActivityTelaInicialBinding.inflate(layoutInflater)
 
 
-        Agenda.listaContatoss.add(Contatos("Luis", "01"))
-        Agenda.listaContatoss.add(Contatos("Caio", "02"))
-        Agenda.listaContatoss.add(Contatos("Larissa", "03"))
-        Agenda.listaContatoss.add(Contatos("Ecson", "04"))
-        Agenda.listaContatoss.add(Contatos("Erigeyce", "05"))
+        Agenda.listaContatoss.add(Contatos("Luis", "01", "luis@mypay.com"))
+        Agenda.listaContatoss.add(Contatos("Caio", "02", "Caio@mypay.com"))
+        Agenda.listaContatoss.add(Contatos("Larissa", "03", "Larissa@mypay.com"))
+        Agenda.listaContatoss.add(Contatos("Ecson", "04", "Ecson@mypay.com"))
+        Agenda.listaContatoss.add(Contatos("Erigeyce", "05", "Erigeyce@mypay.com"))
 
         binding.btEditarContato.setOnClickListener {
         val intent = Intent(this, EditarContatoActivity::class.java)
@@ -65,8 +65,9 @@ class TelaInicialActivity : AppCompatActivity() {
         if (Agenda.listaContatoss.size !=0){
             val contatoAtual = Agenda.listaContatoss[indiceAtual]
             val novoTexto = """
-                nome: ${contatoAtual.nome}
+                Nome: ${contatoAtual.nome}
                 Telefone: ${contatoAtual.telefone}
+                E-mail: ${contatoAtual.email}
             """.trimIndent()
             binding.agendaTxtMostrarContato.text = novoTexto
         }else{

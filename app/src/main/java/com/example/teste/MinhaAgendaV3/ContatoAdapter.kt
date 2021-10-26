@@ -28,5 +28,6 @@ class ContatoAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.txtNome.text = listaContatos3[position].nome
         holder.binding.txtTelefone.text = listaContatos3[position].telefone
+        holder.binding.txtEmail.text = listaContatos3[position].email
         }
     }

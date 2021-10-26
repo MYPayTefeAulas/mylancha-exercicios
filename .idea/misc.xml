@@ -7,7 +7,10 @@
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/java/com/example/teste/android-examples-main/android-examples-main/Agenda/MinhaAgendaV1/app/src/main/res/layout/activity_tela_inicial.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/drawable/ic_home_24.xml" value="0.2703125" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/drawable/ic_settings_24.xml" value="0.2703125" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_agenda.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_agenda_alura.xml" value="0.264" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_agenda_principal.xml" value="0.264" />
@@ -15,7 +18,7 @@
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_arena.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_contato_adapter.xml" value="0.264" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_contato_adapter4.xml" value="0.1" />
-        <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_editar_contato.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_editar_contato.xml" value="0.264" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_editar_contato2.xml" value="0.264" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_editar_contato4.xml" value="0.23706896551724138" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/activity_editar_contato5.xml" value="0.264" />
@@ -39,6 +42,7 @@
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/fragment_ajustes.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/fragment_lista_contatos.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/item_contato.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/item_contato2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/item_contato4.xml" value="0.4" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/layout/item_contato5.xml" value="0.4" />
         <entry key="..\:/Users/LUIS FELIPE/AndroidStudioProjects/Teste/app/src/main/res/menu/navigation_menu.xml" value="0.264" />

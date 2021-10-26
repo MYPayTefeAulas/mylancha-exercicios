@@ -20,13 +20,16 @@ class EditarContato2Activity : AppCompatActivity() {
 
         val nome: String = Agenda2.listaContato2[indiceContato2].nome
         val telefone : String = Agenda2.listaContato2[indiceContato2].telefone
+        val email: String = Agenda2.listaContato2[indiceContato2].email
         binding.agenda2TxtNome.setText(nome)
         binding.agenda2TxtTelefone.setText(telefone)
+        binding.agenda2TxtEmail.setText(email)
 
 
         binding.agenda2BtSalvar.setOnClickListener {
             Agenda2.listaContato2[indiceContato2].nome = binding.agenda2TxtNome.text.toString()
             Agenda2.listaContato2[indiceContato2].telefone = binding.agenda2TxtTelefone.text.toString()
+            Agenda2.listaContato2[indiceContato2].email = binding.agenda2TxtEmail.text.toString()
             Toast.makeText(this, "Contato Salvo com sucasso!", Toast.LENGTH_SHORT).show()
             finish()
         }
