@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MinhaAgendaV6.EditarContato6Activity">
+
+    <EditText
+        android:id="@+id/agenda6_txtNome"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@id/agenda6_txtTelefone"
+
+        android:text="Nome:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/agenda6_txtSobreNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@id/agenda6_txtNome"
+        android:text="SobreNome:"
+        app:layout_constraintEnd_toEndOf="@+id/agenda6_txtNome"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/agenda6_txtNome" />
+
+    <EditText
+        android:id="@+id/agenda6_txtTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        android:text="Telefone:"
+        app:layout_constraintEnd_toEndOf="@+id/agenda6_txtSobreNome"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtSobreNome"
+        app:layout_constraintTop_toBottomOf="@+id/agenda6_txtSobreNome" />
+
+    <EditText
+        android:id="@+id/agenda6_txtemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="E-mail"
+        app:layout_constraintEnd_toEndOf="@+id/agenda6_txtSobreNome"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtSobreNome"
+        app:layout_constraintTop_toBottomOf="@+id/agenda6_txtTelefone" />
+
+    <EditText
+        android:id="@+id/agenda6_txtEndereço"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@id/agenda6_txtNome"
+        android:text="Endereço:"
+        app:layout_constraintEnd_toEndOf="@+id/agenda6_txtemail"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtemail"
+        app:layout_constraintTop_toBottomOf="@+id/agenda6_txtemail" />
+
+
+    <Button
+        android:id="@+id/agenda6_btSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#BF0E32EC"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="@+id/agenda6_txtemail"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtemail"
+        app:layout_constraintTop_toBottomOf="@+id/agenda6_txtEndereço" />
+
+    <TextView
+        android:id="@+id/txt6Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textColor="#121111"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda6_txtNome"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtNome" />
+
+    <TextView
+        android:id="@+id/txt6SobreNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SobreNome"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda6_txtSobreNome"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtSobreNome" />
+
+    <TextView
+        android:id="@+id/txt6telefone"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:text="Telefone"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda6_txtTelefone"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtTelefone" />
+
+    <TextView
+        android:id="@+id/txt6Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textColor="#090808"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda6_txtemail"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtemail" />
+
+    <TextView
+        android:id="@+id/txt6Endereço"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/agenda6_txtEndereço"
+        app:layout_constraintStart_toStartOf="@+id/agenda6_txtEndereço" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="183dp"
+        android:layout_height="134dp"
+        android:background="#2A039BE5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

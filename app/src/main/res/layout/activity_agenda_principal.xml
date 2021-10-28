@@ -51,4 +51,26 @@
         app:layout_constraintStart_toStartOf="@+id/btAgebdaVersão3"
         app:layout_constraintTop_toBottomOf="@+id/btAgebdaVersão3" />
 
+    <Button
+        android:id="@+id/btAgendaVers05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FDD835"
+        android:text="agenda v5"
+        app:layout_constraintEnd_toEndOf="@+id/btAgendaVers04"
+        app:layout_constraintStart_toStartOf="@+id/btAgendaVers04"
+        app:layout_constraintTop_toBottomOf="@+id/btAgendaVers04" />
+
+    <Button
+        android:id="@+id/btAgendaVers06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#D81B60"
+        android:text="agenda v6"
+        app:layout_constraintEnd_toEndOf="@+id/btAgendaVers05"
+        app:layout_constraintStart_toStartOf="@+id/btAgendaVers05"
+        app:layout_constraintTop_toBottomOf="@+id/btAgendaVers05" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.teste">
+    package="com.example.teste" >
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Teste">
+        android:theme="@style/Theme.Teste" >
+
+        <activity
+            android:name=".MinhaAgendaV6.ContatoAdapter6"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".MinhaAgendaV6.EditarContato6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MinhaAgendaV6.TelaInicial6Activity"
+            android:exported="true"
+            android:theme="@style/NoActionBar" >
+
+        </activity>
         <activity
             android:name=".AgendaPrincipalActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MinhaAgendaV5.fragments.AjustesFragment"
@@ -28,8 +46,7 @@
             tools:ignore="Instantiatable" />
         <activity
             android:name=".MinhaAgendaV5.TelaInicial5Activity"
-            android:exported="true">
-
+            android:exported="true" >
         </activity>
         <activity
             android:name=".MinhaAgendaV4.ContatoAdapter4"
@@ -40,12 +57,7 @@
             android:exported="true" />
         <activity
             android:name=".MinhaAgendaV4.TelaInicial4Activity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true" >
         </activity>
         <activity
             android:name=".MinhaAgendaV3.ContatoAdapter"
@@ -53,25 +65,19 @@
             tools:ignore="Instantiatable" />
         <activity
             android:name=".MinhaAgendaV3.TelaInicial3Activity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MinhaAgendaV2.EditarContato2Activity"
             android:exported="true" />
         <activity
             android:name=".MinhaAgendaV2.TelaInicial2Activity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MinhaAgendaV1.EditarContatoActivity"
             android:exported="true" />
         <activity
             android:name=".MinhaAgendaV1.TelaInicialActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".agenda_alura.Agenda_AluraActivity"
             android:exported="true" />
