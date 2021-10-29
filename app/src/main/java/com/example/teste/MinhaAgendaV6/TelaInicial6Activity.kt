@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.teste.MinhaAgendaV6.fragments6.AjusteFragment6
+import com.example.teste.MinhaAgendaV6.fragments6.ListaContatos6Fragment
 import com.example.teste.MinhaAgendaV6.fragments6.ListaContatos6MelhoradaFragment
 import com.example.teste.R
 import com.example.teste.databinding.ActivityTelaInicial6Binding
+import com.example.teste.databinding.FragmentListaContatos6Binding
 
 class TelaInicial6Activity : AppCompatActivity() {
 
@@ -22,7 +24,7 @@ class TelaInicial6Activity : AppCompatActivity() {
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.fragmentContainer6, ListaContatos6MelhoradaFragment())
+            .replace(R.id.fragmentContainer6, ListaContatos6Fragment())
             .commit()
 
         binding.bottomNavigation6.setOnNavigationItemSelectedListener {

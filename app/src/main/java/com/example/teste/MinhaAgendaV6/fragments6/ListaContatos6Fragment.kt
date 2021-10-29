@@ -1,4 +1,118 @@
 package com.example.teste.MinhaAgendaV6.fragments6
 
-class ListaContatos6Fragment {
+import android.content.Intent
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.teste.MinhaAgendaV6.Agenda6
+import com.example.teste.MinhaAgendaV6.ContatoAdapter6
+import com.example.teste.MinhaAgendaV6.EditarContato6Activity
+import com.example.teste.R
+import com.example.teste.databinding.FragmentListaContatos6Binding
+
+class ListaContatos6Fragment: Fragment() {
+    private var _binding: FragmentListaContatos6Binding? = null
+
+    private val binding get() = _binding!!
+
+    private lateinit var adapter: ContatoAdapter6
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentListaContatos6Binding.inflate(inflater, container, false)
+
+        adapter = ContatoAdapter6(mutableListOf(), ::onBtEditarClick)
+
+        binding.rvContatos6.layoutManager = LinearLayoutManager(context)
+        binding.rvContatos6.adapter = adapter
+        binding.rvContatos6.addItemDecoration(
+            DividerItemDecoration(
+                context,
+                LinearLayoutManager.VERTICAL
+            )
+        )
+        carregaLista()
+
+        initTopBar()
+
+        return binding.root
+    }
+    private fun carregaLista() {
+        val config = requireActivity().getSharedPreferences("configuracoes", 0)
+        val listaOrdemAlfabetica = config.getBoolean("listaContatosAlfabetico", false)
+        if(listaOrdemAlfabetica) {
+            val listaOrdenada = Agenda6.listaContatos6.sortedBy { it.nome }
+            adapter.swapData(listaOrdenada)
+        } else {
+            adapter.swapData(Agenda6.listaContatos6)
+        }
+    }
+    private fun initTopBar() {
+        binding.toolbarContatos6.setOnMenuItemClickListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.search_top_bar -> {
+                    val searchView = menuItem?.actionView as SearchView
+                    searchView.queryHint = "Digite para pesquisar"
+
+                    val listenerDigitacao = object : SearchView.OnQueryTextListener {
+                        override fun onQueryTextChange(newText: String?): Boolean =
+                            onQueryTextSubmit(newText) // vai buscar a cada letra digitada
+
+                        override fun onQueryTextSubmit(query: String?): Boolean {
+                            val queryLowerCase = query.toString().lowercase()
+
+                            val listaFiltrada = Agenda6.listaContatos6.filter { contatoAtual ->
+                                contatoAtual.nome.lowercase().contains(queryLowerCase) ||
+                                        contatoAtual.telefone.lowercase().contains(queryLowerCase)
+                            }
+
+                            // forma tradicional com loops para explicar o que está ocorrendo acima
+//                            val listaFiltrada = mutableListOf<Contato>()
+//                            Agenda.listaContatos.forEach {
+//                                val nomeLowerCase = it.nome.lowercase()
+//                                val telefoneLowerCase = it.telefone.lowercase()
+//
+//                                if (nomeLowerCase.contains(queryLowerCase) ||
+//                                    telefoneLowerCase.contains(queryLowerCase)) {
+//                                    listaFiltrada.add(it)
+//                                }
+//                            }
+                            adapter.swapData(listaFiltrada)
+                            return true
+                        }
+                    }
+
+                    searchView.setOnQueryTextListener(listenerDigitacao)
+
+                    true
+                }
+                else -> false
+            }
+        }
+    }
+    override fun onResume() {
+        super.onResume()
+        carregaLista()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    fun onBtEditarClick(indiceLista: Int) {
+        val intent = Intent(context, EditarContato6Activity::class.java)
+        intent.putExtra("indiceContato", indiceLista)
+        startActivity(intent)
+    }
+
+
 }
